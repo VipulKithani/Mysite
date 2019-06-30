@@ -26,7 +26,7 @@ class About extends Component{
         })
     }
     handleSubmit=(name,no,color)=>{
-        alert("Welcome " +this.state.name+". Your contact number is: "+this.state.no+". Your fav Color is: "+this.state.color);
+        alert("Welcome " +this.state.name+". Your contact number is "+this.state.no+". Your fav Color is "+this.state.color);
     }
     render(){
         return(
