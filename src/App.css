@@ -31,3 +31,73 @@
     transform: rotate(360deg);
   }
 }
+.h1{
+  text-align: center
+}
+.pos{
+  text-align: center;
+  font-size: 25px;
+}
+.card1{
+  font-size: 20px;
+  color: black;
+  padding:5px;
+}
+
+.landing-grid{
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height:100%;
+  position: fixed;
+  left: 0;
+  top:10;
+  width:100%;
+  text-align: center;
+  }
+  .avatar-img{
+    height:250px;
+    padding-top: 5px;
+    
+  }
+  .banner-text{
+    opacity:0.8;
+    width:65%;
+    background-color: black;
+    border-radius: 10px;
+    margin:auto;
+    text-align: center
+  }
+  .banner-text h1{
+    font-size: 66px;
+    font-weight: bold;
+    color:white;
+  }
+  .banner-text hr{
+    margin:auto;
+    width:50%;
+    border-top: 5px dotted white
+  }
+  .banner-text p{
+    color:white;
+    font-size:20px;
+    
+    padding: 20px;
+  }
+  .name{
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    padding:5px;
+  }
+  .social-links{
+    width:50%;
+    display: flex;
+    margin:auto;
+    justify-content: space-between;
+  }
+  .social-links i{
+color:white;
+font-size: 50px;
+padding:8px;
+  }
