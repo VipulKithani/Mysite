@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Button ,Textfield}from 'react-mdl'
+import {Button,IconButton ,Textfield}from 'react-mdl'
 
 class About extends Component{
     constructor(){
@@ -30,10 +30,10 @@ class About extends Component{
     }
     render(){
         return(
-            <div>
-                Welcome to About Page.<br/>
+            <div >
+                
                 <form onSubmit={this.handleSubmit}>
-                    <div>
+                    <div >
 
                         <Textfield
                         
@@ -63,6 +63,7 @@ class About extends Component{
                         />
                     </div>
                     <Button type="submit">Submit</Button>
+                    <IconButton name="mood" />
                     </form>
                 
 

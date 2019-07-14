@@ -1,37 +1,98 @@
 import React,{Component} from 'react';
-import {Card,CardTitle,CardActions,CardText,CardMenu,Button,IconButton} from 'react-mdl'
-import Column from './Column';
+import {Tabs,Tab,Grid,Cell,Icon,FABButton,Card,CardText,CardTitle,CardActions,IconButton,Button,CardMenu} from 'react-mdl'
+
 class Profile extends Component{
+    constructor(props) {
+        super(props)
+        this.state = { activeTab: 0};
+    }
+    changeTab=(tabId)=>(
+        this.setState({
+            activeTab: tabId
+        })
+    )
+    toggleCategories(){
+        if(this.state.activeTab === 0){
+            return(
+                <div className='project-grid'>
+                    <Card shadow={0} style={{width: '379px', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
+            <CardText>
+            My first Project
+            </CardText>
+            <CardActions border>
+            <Button colored>Get Started</Button>
+            <Button colored>Get Started</Button>
+            <Button colored>Get Started</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+            </CardMenu>
+            </Card>
+
+            <Card shadow={0} style={{width: '379px', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
+            <CardText>
+            My Second Project
+            </CardText>
+            <CardActions border>
+            <Button colored>Get Started</Button>
+            <Button colored>Get Started</Button>
+            <Button colored>Get Started</Button>
+            </CardActions>
+            
+            <CardMenu style={{color: '#fff'}}>
+            <IconButton name="share" href='https://google.com'/>
+            </CardMenu>
+            
+            </Card>
+
+            <Card shadow={0} style={{width: '379px', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover'}}>Welcome</CardTitle>
+            <CardText>
+            My Third Project
+            </CardText>
+            <CardActions border>
+            <Button colored>Get Started</Button>
+            <Button colored>Get Started</Button>
+            <Button colored>Get Started</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+            </CardMenu>
+            </Card>
+
+                </div>
+            
+            );
+        }
+        else if(this.state.activeTab === 1){
+            return(
+                <div><h1>This is Second</h1></div>
+            );
+        }
+        else{
+            return(
+                <div><h1>This is Third</h1></div>
+            );
+        }
+        
+    }
     render(){
         return(
-            <div>
-                Welcome to Profile P
-                <Card shadow={0} style={{width: '256px', height: '256px', background: 'url(https://scontent-bom1-1.xx.fbcdn.net/v/t1.0-9/46495925_2102218823207227_722988977560223744_n.jpg?_nc_cat=104&_nc_oc=AQmzIVHzOEJrFD30cLVSribmvpVvOQhHjhwQyd38_rrdm8giU8xEMaKe4an7HwOumoI&_nc_ht=scontent-bom1-1.xx&oh=d151dca34104e8677fa47b3e116626a0&oe=5DB82B9B) center / cover', margin: '10px'}}>
-                <CardTitle expand />
-                <CardActions style={{height: '52px', padding: '16px', background: 'rgba(0,0,0,0.2)'}}>
-                <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
-                Vipul Kithani
-                </span>
-                </CardActions>
-
-                </Card>
-
-                <Card shadow={0} style={{width: '512px',height: '256px', margin: '-264px 0px 0px 280px'}}>
+            <div className="demo-tabs">
+                <Tabs activeTab={this.state.activeTab} onChange={this.changeTab} ripple>
+                    <Tab>First</Tab>
+                    <Tab>Second</Tab>
+                    <Tab>Third</Tab>
+                </Tabs>
+                <div >
+                    <Grid >
+                        <Cell col={12}>
+                        <div className="content">{this.toggleCategories()}</div>
+                            </Cell>
+                        </Grid>
+                    
+                </div>
                 
-                <CardText >
-                    <p className='card1'>
-                
-                <table>
-                    <tbody>
-                        <Column/>
-                    </tbody>
-                 </table>
-                </p>
-                </CardText>
-                <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share" />
-                </CardMenu>
-                </Card>
             </div>
         );
     }
