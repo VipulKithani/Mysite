@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/VipulKithani/mysite/static/css/main.bc938eb7.chunk.css",
-    "main.js": "/VipulKithani/mysite/static/js/main.defab068.chunk.js",
-    "main.js.map": "/VipulKithani/mysite/static/js/main.defab068.chunk.js.map",
-    "runtime~main.js": "/VipulKithani/mysite/static/js/runtime~main.2087be1e.js",
-    "runtime~main.js.map": "/VipulKithani/mysite/static/js/runtime~main.2087be1e.js.map",
-    "static/css/2.04aae6c4.chunk.css": "/VipulKithani/mysite/static/css/2.04aae6c4.chunk.css",
-    "static/js/2.d2f84d4c.chunk.js": "/VipulKithani/mysite/static/js/2.d2f84d4c.chunk.js",
-    "static/js/2.d2f84d4c.chunk.js.map": "/VipulKithani/mysite/static/js/2.d2f84d4c.chunk.js.map",
-    "index.html": "/VipulKithani/mysite/index.html",
-    "precache-manifest.7e4f80a90fd12b5e55c2fc2387e3ca14.js": "/VipulKithani/mysite/precache-manifest.7e4f80a90fd12b5e55c2fc2387e3ca14.js",
-    "service-worker.js": "/VipulKithani/mysite/service-worker.js",
-    "static/css/2.04aae6c4.chunk.css.map": "/VipulKithani/mysite/static/css/2.04aae6c4.chunk.css.map",
-    "static/css/main.bc938eb7.chunk.css.map": "/VipulKithani/mysite/static/css/main.bc938eb7.chunk.css.map",
-    "static/media/index.css": "/VipulKithani/mysite/static/media/logo.bd9ede4a.png"
+    "main.css": "/mysite/static/css/main.57cb7c96.chunk.css",
+    "main.js": "/mysite/static/js/main.defab068.chunk.js",
+    "main.js.map": "/mysite/static/js/main.defab068.chunk.js.map",
+    "runtime~main.js": "/mysite/static/js/runtime~main.2f907dfc.js",
+    "runtime~main.js.map": "/mysite/static/js/runtime~main.2f907dfc.js.map",
+    "static/css/2.04aae6c4.chunk.css": "/mysite/static/css/2.04aae6c4.chunk.css",
+    "static/js/2.d2f84d4c.chunk.js": "/mysite/static/js/2.d2f84d4c.chunk.js",
+    "static/js/2.d2f84d4c.chunk.js.map": "/mysite/static/js/2.d2f84d4c.chunk.js.map",
+    "index.html": "/mysite/index.html",
+    "precache-manifest.4f99498f240a4875627239dddcd8dd04.js": "/mysite/precache-manifest.4f99498f240a4875627239dddcd8dd04.js",
+    "service-worker.js": "/mysite/service-worker.js",
+    "static/css/2.04aae6c4.chunk.css.map": "/mysite/static/css/2.04aae6c4.chunk.css.map",
+    "static/css/main.57cb7c96.chunk.css.map": "/mysite/static/css/main.57cb7c96.chunk.css.map",
+    "static/media/index.css": "/mysite/static/media/logo.bd9ede4a.png"
   }
 }
